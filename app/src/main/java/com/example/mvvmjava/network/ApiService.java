@@ -1,6 +1,7 @@
 package com.example.mvvmjava.network;
 
 import com.example.mvvmjava.models.EntryModel;
+import com.example.mvvmjava.models.RecyclerData;
 
 import java.util.List;
 
@@ -9,6 +10,9 @@ import retrofit2.http.GET;
 
 public interface ApiService {
 
+    @GET("63OH")
+    Call<RecyclerData> getEntry();
+
     @GET("entries")
-    Call<List<EntryModel>> getEntry();
+    Call<EntryModel> getEntryData();
 }
