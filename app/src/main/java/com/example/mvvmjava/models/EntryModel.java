@@ -11,8 +11,16 @@ public class EntryModel{
 	@SerializedName("count")
 	private Integer count;
 
+	public void setEntries(List<EntriesItem> entries){
+		this.entries = entries;
+	}
+
 	public List<EntriesItem> getEntries(){
 		return entries;
+	}
+
+	public void setCount(Integer count){
+		this.count = count;
 	}
 
 	public Integer getCount(){
