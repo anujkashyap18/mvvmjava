@@ -5,9 +5,9 @@ import android.util.Log;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.mvvmjava.response.EntryResponse;
 import com.example.mvvmjava.network.ApiService;
 import com.example.mvvmjava.network.RetrofitInstance;
+import com.example.mvvmjava.response.EntryResponse;
 
 import java.util.List;
 

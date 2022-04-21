@@ -1,7 +1,7 @@
 package com.example.mvvmjava.network;
 
-import com.example.mvvmjava.response.EntryResponse;
 import com.example.mvvmjava.models.RecyclerData;
+import com.example.mvvmjava.response.EntryResponse;
 
 import java.util.List;
 

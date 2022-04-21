@@ -5,13 +5,13 @@ import java.util.List;
 import com.example.mvvmjava.models.EntriesItem;
 import com.google.gson.annotations.SerializedName;
 
-public class EntryResponse {
+public class EntryResponse{
 
 	@SerializedName("entries")
 	private List<EntriesItem> entries;
 
 	@SerializedName("count")
-	private Integer count;
+	private int count;
 
 	public void setEntries(List<EntriesItem> entries){
 		this.entries = entries;
@@ -21,11 +21,11 @@ public class EntryResponse {
 		return entries;
 	}
 
-	public void setCount(Integer count){
+	public void setCount(int count){
 		this.count = count;
 	}
 
-	public Integer getCount(){
+	public int getCount(){
 		return count;
 	}
 }

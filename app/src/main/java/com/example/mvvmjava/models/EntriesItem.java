@@ -11,7 +11,7 @@ public class EntriesItem{
 	private String category;
 
 	@SerializedName("HTTPS")
-	private Boolean hTTPS;
+	private boolean hTTPS;
 
 	@SerializedName("Auth")
 	private String auth;
@@ -41,11 +41,11 @@ public class EntriesItem{
 		return category;
 	}
 
-	public void setHTTPS(Boolean hTTPS){
+	public void setHTTPS(boolean hTTPS){
 		this.hTTPS = hTTPS;
 	}
 
-	public Boolean isHTTPS(){
+	public boolean isHTTPS(){
 		return hTTPS;
 	}
 
