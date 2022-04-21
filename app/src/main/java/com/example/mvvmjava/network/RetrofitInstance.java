@@ -16,7 +16,7 @@ public class RetrofitInstance {
         if (retrofit == null) {
             OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(
                     new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BASIC)).build();
-            retrofit = new Retrofit.Builder().baseUrl(BASE_URL).client(okHttpClient).addConverterFactory(GsonConverterFactory.create()).build();
+            retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
         }
         return retrofit;
     }

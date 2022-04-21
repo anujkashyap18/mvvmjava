@@ -1,9 +1,11 @@
-package com.example.mvvmjava.models;
+package com.example.mvvmjava.response;
 
 import java.util.List;
+
+import com.example.mvvmjava.models.EntriesItem;
 import com.google.gson.annotations.SerializedName;
 
-public class EntryModel{
+public class EntryResponse {
 
 	@SerializedName("entries")
 	private List<EntriesItem> entries;

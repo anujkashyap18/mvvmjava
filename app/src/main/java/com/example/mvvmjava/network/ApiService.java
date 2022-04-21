@@ -1,6 +1,6 @@
 package com.example.mvvmjava.network;
 
-import com.example.mvvmjava.models.EntryModel;
+import com.example.mvvmjava.response.EntryResponse;
 import com.example.mvvmjava.models.RecyclerData;
 
 import java.util.List;
@@ -14,5 +14,8 @@ public interface ApiService {
     Call<RecyclerData> getEntry();
 
     @GET("entries")
-    Call<EntryModel> getEntryData();
+    Call<List<EntryResponse>> getEntryData();
+
+    @GET("entries")
+    Call<EntryResponse> entryData();
 }
